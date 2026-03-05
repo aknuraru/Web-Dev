@@ -1,0 +1,10 @@
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/albums" routerLinkActive="active">Albums</a>
+  <a routerLink="['/albums', album.id]" routerLinkActive="active">Album-details</a>
+  <a routerLink="['/albums,album.id,'photos']" routerLinkActive="active">Album-photos</a>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>

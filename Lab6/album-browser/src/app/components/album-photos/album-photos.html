@@ -1,0 +1,14 @@
+@if (loading) {
+  <div>Loading photos...</div>
+} @else {
+  <div class="grid">
+    @for (photo of photos; track photo.id) {
+      <div class="photo">
+        <img [src]="photo.thumbnailUrl" [alt]="photo.title" />
+        <p>{{ photo.title }}</p>
+      </div>
+    }
+  </div>
+}
+
+<button (click)="goBack()">Back</button>

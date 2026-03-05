@@ -1,0 +1,18 @@
+<h2>Albums</h2>
+
+@if (loading) {
+  <div>Loading...</div>
+} @else {
+  <ul>
+    @for (album of albums; track album.id) {
+      <li>
+        <a [routerLink]="['/albums', album.id]">
+          {{ album.id }} - {{ album.title }}
+        </a>
+        <button (click)="deleteAlbum(album.id)">
+          Delete
+        </button>
+      </li>
+    }
+  </ul>
+}

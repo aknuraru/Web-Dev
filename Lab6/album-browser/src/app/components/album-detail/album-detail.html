@@ -1,0 +1,17 @@
+@if (loading) {
+  <div>Loading...</div>
+} @else {
+  <div>
+    <h2>Album {{ album.id }}</h2>
+    <p>User ID: {{ album.userId }}</p>
+
+    <label>
+      Title:
+      <input [(ngModel)]="album.title" />
+    </label>
+
+    <button (click)="save()">Save</button>
+    <button (click)="goToPhotos()">View Photos</button>
+    <button (click)="goBack()">Back</button>
+  </div>
+}
