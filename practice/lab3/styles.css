@@ -1,0 +1,38 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:50px;
+}
+.container{
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    border-radius:10px;
+}
+#addbut{
+    padding: 10px 15px;
+    background-color: aqua;
+    cursor:pointer;
+}
+input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding:20px;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

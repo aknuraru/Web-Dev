@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  margin: 8px 0;
+}
+.student-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 4px 12px;
+  background: #fafafa;
+  transition: box-shadow 0.2s;
+}
+.student-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}

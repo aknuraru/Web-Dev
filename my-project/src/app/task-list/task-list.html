@@ -1,0 +1,15 @@
+<h2>Task APP</h2>
+<input type="text" [(ngModel)]="newTask">
+<button (click)="addTask()">Add Task</button>
+
+<ul>
+  @for(task of tasks; track task){
+    <app-task-item
+      [task]="task"
+      [index]="$index"
+      (delete)="deleteTask($event)"
+    />
+  } @empty {
+    <li>Please, add tasks using the form above</li>
+  }
+</ul>

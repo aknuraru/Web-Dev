@@ -1,0 +1,9 @@
+<input type="text" [(ngModel)]="newTask">
+<button (click)="addTask()">+</button>
+<ul>
+  @for(task of tasks;track task){
+    <app-task-list [task]="task" [index]="$index" (delete)="deleteTask($event)" ></app-task-list>
+  } @empty {
+    <p>please fill</p>
+  }
+</ul>

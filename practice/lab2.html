@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <title>CineWave — Stream Anytime</title>
+    <meta charset="utf-8">
+    <style>
+        body{
+            padding:20px;
+        }
+        #header{
+            background-color:#1a1a2e;
+            color:white;
+            display:flex;
+            justify-content: space-between;
+            padding:20px 40px;
+        }
+        nav ul{
+            display:flex;
+            list-style: none;
+            gap:20px;
+        }
+        nav ul li a{
+            color:red;
+        }
+        nav ul li a:hover{
+            color:black;
+        }
+        #hero{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: brown;
+            text-align: center;
+        }
+        #hero input{
+            padding:300px;
+            border-radius: 15px;
+            gap:20px;
+        }
+        #hero button{
+            background-color: #e94560;
+            padding: 12px;
+            border-radius: 25px;
+        }
+        #hero button:hover{
+            background-color:#6a5cff;
+        }
+        #hero form{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:15px;
+        }
+        .movgr{
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            gap:20px;
+        }
+        .movie-card{
+            padding:15px;
+            border-radius: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 10px;
+        }
+        .movie-card img{
+            width: 100%
+        }
+        .genre{
+            color:darksalmon;
+        }
+        .movie-card:hover{
+            transform: scale(1.05);
+        }
+        .pricing{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+        }
+        .plan-card{
+            width:30%;
+            border:2px solid pink;
+            padding:20px;
+        }
+        .plan-card:nth-child(1){
+            border:2px solid purple;
+            transform:scale(1.05);
+        }
+        .price{
+            color:yellow;
+            font-weight:bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>CineWave</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Unlimited Movies, Anytime, Anywhere</h1>
+        <p>lorem lorem lorem bala kskso2smo2mosnx3nxjxx</p>
+        <form>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+            <button>Get started</button>
+        </form>
+    </section>
+    <section id="movies">
+        <h1>Featured Movies</h1>
+        <div class="movgr">
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>hell</h3>
+                <span class="genre">roman</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>helloo</h3>
+                <span class="genre">fantasy</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>love</h3>
+                <span class="genre">genr</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>mmyy</h3>
+                <span class="genre">roman</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>dad</h3>
+                <span class="genre">roman</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>mom</h3>
+                <span class="genre">fantasy</span>
+            </div>
+            <div class="movie-card">
+                <img src="https://via.placeholder.com/200x280">
+                <h3>girl</h3>
+                <span class="genre">roman</span>
+            </div>
+        </div>
+    </section>
+    <section id="pricing">
+        <h1>Choose Your Plan</h1>
+        <div class="pricing container">
+            <div class="plan-card">
+                <h3>Basic</h3>
+                <p class="price">1,500 ₸/month</p>
+                <ul>
+                    <li>SD quality</li>
+                    <li>1 device</li>
+                    <li>limited library</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="plan-card">
+                <h3>standard</h3>
+                <p class="price">2,500 ₸/month</p>
+                <ul>
+                    <li>SD quality</li>
+                    <li>1 device</li>
+                    <li>limited library</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="plan-card">
+                <h3>Premium </h3>
+                <p class="price">4,000 ₸/month</p>
+                <ul>
+                    <li>SD quality</li>
+                    <li>1 device</li>
+                    <li>limited library</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>© 2026 CineWave. All Rights Reserved.</p>
+        <p>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </p>
+    </footer>
+</body>
+</html>

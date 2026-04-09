@@ -1,0 +1,8 @@
+<h2>Students</h2>
+@for(student of students;track student){
+  <app-stdent-card [student]="student"
+  (delete)="deleteStudent($event)"/>
+}@empty{
+  <p>No students added yet</p>
+}
+<app-task-list/>

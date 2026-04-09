@@ -1,0 +1,12 @@
+<div class="product-card">
+  <h2>{{product().name}}</h2>
+  <p>{{product().price}}</p>
+  <p>{{product().likes}}</p>
+  @if(product().inStock){
+    <span>In Stock</span>
+  }@else{
+    <span>Out of Stock</span>
+  }
+  <button (click)="onDelete()">X</button>
+  <button (click)="like()">+</button>
+</div>

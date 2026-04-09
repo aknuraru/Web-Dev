@@ -1,0 +1,11 @@
+@if (loading) {
+  <div>Loading...</div>
+}
+
+@for (post of posts; track post.id) {
+  <div class="card">
+    <a [routerLink]="['/posts', post.id]">
+      <h3>{{ post.title }}...</h3>
+    </a>
+  </div>
+}

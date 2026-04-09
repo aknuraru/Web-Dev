@@ -1,0 +1,28 @@
+body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+#currval{
+    font-size:48px;
+}
+.buttons{
+    padding:10px 20px;
+    margin:15px;
+}
+#decr{
+    background-color: red;
+    color:white;
+}
+#incr{
+    background-color:green;
+    color:white;
+}
+#reset{
+    background-color: gray;
+    color:white;
+}
+button:hover{
+    transform: scale(1.05);
+}

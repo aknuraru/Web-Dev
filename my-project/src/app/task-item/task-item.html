@@ -1,0 +1,7 @@
+<li class="task-item">
+  <div class="task-content">
+    <span class="task-text">{{ task() }}</span>
+    <span class="task-time">Created at: {{ createdAt }}</span>
+  </div>
+  <button (click)="onDelete()" class="delete-btn">Delete</button>
+</li>

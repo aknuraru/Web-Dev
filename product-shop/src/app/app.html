@@ -1,0 +1,4 @@
+<h4>Product Catalog</h4>
+@for(product of products;track product.id){
+  <app-product-card [product]="product" (delete)="deleteProduct($event)"></app-product-card>
+}
