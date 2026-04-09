@@ -1,6 +1,0 @@
-<h4>My movie list</h4>
-@for(movie of movies;track movie){
-  <app-movie-card [movie]="movie" (delete)="deleteProduct($event)"></app-movie-card>
-} @empty {
-  <p>please refresh your page</p>
-}
